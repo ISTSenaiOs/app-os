@@ -1,0 +1,78 @@
+sebraetec
+brasil mais produtivo
+outros: descrever o serviço
+
+CFP 119 Carteira Geral
+	CFP = Number (Código da escola)
+	Tipo de atendimento Classificação CRM = String (Selecionáveis)
+	Proposta de atendimento SGSET = String
+	Status CRM = Boolean (Oportunidade ganha / Oportunidade perdida) (Selecionáveis)
+	Cadastrado no CRM = String (Sim, Não, N/A)
+	Status do atendimento = String (Oportunidade perdida / Oportunidade ganha / Oportunidade aberta / Não elegível) (Selecionáveis)
+	Data de contato = Date
+	Obs do atendimento = String
+	Contato = String (Nome)
+	Cargo = String
+	CNPJ = String
+	Nome fantasia = String
+	Razão social = String
+	Município = String
+	Porte = String (EPP / ME / DEMAIS) (Selecionáveis)
+	Endereço = String
+	CNAE Principal = String
+	CNAE Secundária = String
+	Tipo de Indústria = String (Selecionáveis)
+	Telefone = String
+	Email = String
+	QSA = String (Nome)
+	Especialista responsável = String (Nome) (Selecionáveis)
+	Data de agendamento = Date
+	Data de atendimento = Date
+	Especialista = String (Nome) (Selecionáveis)
+	Situação = String (Selecionáveis)
+	
+Oportunidades abertas - CRM
+	Status = String
+	Data de criação = Date
+	Sistema = String (Selecionáveis)
+	Tópico = String (Selecionáveis)
+	CNPJ = String
+	Razão social (Conta) (Conta) = String
+	Porte = String (EPP / ME / DEMAIS) (Selecionáveis)
+	Município = String
+	Contato = String
+	Telefone = String
+	Email = String
+	Quem contatou = String (Selecionáveis)
+	Status = String (Selecionáveis)
+	
+	Legenda:
+		Laranja = Perdida
+		Amarelo = Em aberto
+		Verde = Ganha
+	
+Oportunidades ganhas - T0
+	CFP da carteira = Number
+	CFP da proposta = Number
+	CNPJ  = String
+	Data de realização da visita de diagnóstico = Date
+	Razão social = String
+	Responsável = String
+	Telefone = String
+	Email = String
+	Porte = String (EPP / ME / DEMAIS) (Selecionáveis)
+	Município = String
+	Carga horária = Number
+	Faixa de faturamento = String
+	Nota de eficiência energética = Number
+	Início indicado de E.E. = Date
+	Início previsto do Lean = Date
+	Responsável pela consultoria = String (Selecionáveis)
+	Lean realizado = Boolean
+	OBS = String
+	Produto(s) Tecnológico(s) indicado(s) = String (Selecionáveis)
+	
+Empresas excluídas
+	CNPJ antigo = String
+	Status = Boolean
+	Razão social = String
