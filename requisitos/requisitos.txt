@@ -52,8 +52,8 @@ Oportunidades abertas - CRM
 		Verde = Ganha
 	
 Oportunidades ganhas - T0
-	CFP da carteira = Number
-	CFP da proposta = Number
+	CFP da carteira = String
+	CFP da proposta = String
 	CNPJ  = String
 	Data de realização da visita de diagnóstico = Date
 	Razão social = String
@@ -64,7 +64,7 @@ Oportunidades ganhas - T0
 	Município = String
 	Carga horária = Number
 	Faixa de faturamento = String
-	Nota de eficiência energética = Number
+	Nota de eficiência energética = String
 	Início indicado de E.E. = Date
 	Início previsto do Lean = Date
 	Responsável pela consultoria = String (Selecionáveis)
