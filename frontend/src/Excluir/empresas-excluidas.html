@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas excluídas</title>
+
+  <link rel="stylesheet" href="../../dist/output.css">
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+  <section>
+    <div class="relative flex justify-center max-h-full lg:px-0 md:px-12">
+      <div
+        class="relative z-10 flex flex-col flex-1 px-4 py-10 bg-white shadow-2xl lg:py-24 md:flex-none md:px-28 sm:justify-center">
+        <div class="w-full max-w-md mx-auto md:max-w-sm md:px-0 md:w-96 sm:px-4">
+          <div class="flex justify-center items-center mb-14">
+            <img src="../assets/images/logo-senai.png" alt="Logo ISTI SENAI" class="w-80">
+          </div>
+
+          <div class="flex flex-col">
+            <div>
+              <h2 class="text-2xl text-black uppercase">Empresas excluídas</h2>
+              <p class="mt-2 text-sm text-gray-500">
+                Insira os dados abaixo para cadastrar.
+              </p>
+            </div>
+          </div>
+
+          <form action="" method="post">
+            <div class="mt-4 space-y-6">
+              <div class="col-span-full">
+                <label for="cnpjAntigo" class="block mb-3 text-sm font-medium text-gray-600">
+                  CNPJ antigo
+                </label>
+                <input type="text" name="cnpjAntigo" id="cnpjAntigo"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="xx.xxx.xxx/xxxx.xx">
+              </div>
+
+              <div class="col-span-full">
+                <label for="status" class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Status</label>
+                <select name="status" id="status"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o status</option>
+                  <option value="">Status 1</option>
+                  <option value="">Status 2</option>
+                  <option value="">Status 3</option>
+                  <option value="">Status 4</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="razaoSocial" class="block mb-3 text-sm font-medium text-gray-600">
+                  Razão social
+                </label>
+                <input type="text" name="razaoSocial" id="razaoSocial"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira a razão social">
+              </div>
+
+              <div class="col-span-full">
+                <button type="submit"
+                  class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-blue-700 border-2 border-blue-700 rounded-full nline-flex hover:bg-transparent hover:border-blue-700 hover:text-blue-700 focus:outline-none focus-visible:outline-blue-700 text-sm focus-visible:ring-blue-700 uppercase">
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
