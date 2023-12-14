@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteira Geral</title>
+
+  <link rel="stylesheet" href="../../dist/output.css">
+
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+  <section>
+    <div class="relative flex justify-center max-h-full lg:px-0 md:px-12">
+      <div
+        class="relative z-10 flex flex-col flex-1 px-4 py-10 bg-white shadow-2xl lg:py-24 md:flex-none md:px-28 sm:justify-center">
+        <div class="w-full max-w-md mx-auto md:max-w-sm md:px-0 md:w-96 sm:px-4">
+          <div class="flex justify-center items-center mb-14">
+            <img src="../assets/images/logo-senai.png" alt="Logo ISTI SENAI" class="w-80">
+          </div>
+
+          <div class="flex flex-col">
+            <div>
+              <h2 class="text-2xl text-black uppercase">Carteira Geral</h2>
+              <p class="mt-2 text-sm text-gray-500">
+                Insira os dados abaixo para cadastrar.
+              </p>
+            </div>
+          </div>
+
+          <form action="" method="post">
+            <div class="mt-4 space-y-6">
+              <div class="col-span-full">
+                <label for="cfp" class="block mb-3 text-sm font-medium text-gray-600">
+                  CFP
+                </label>
+                <input type="text" name="cfp" id="cfp"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Ex.: 119">
+              </div>
+
+              <div class="col-span-full">
+                <label for="tipoAtendimentoCRM"
+                  class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Tipo de
+                  Atendimento CRM</label>
+                <select name="tipoAtendimentoCRM" id="tipoAtendimentoCRM"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o Atendimento</option>
+                  <option value="">Atendimento 1</option>
+                  <option value="">Atendimento 2</option>
+                  <option value="">Atendimento 3</option>
+                  <option value="">Atendimento 4</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="propostaAtendimentoSGSET" class="block mb-3 text-sm font-medium text-gray-600">
+                  Proposta de atendimento SGSET
+                </label>
+                <input type="text" name="propostaAtendimentoSGSET" id="propostaAtendimentoSGSET"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira a proposta SGSET">
+              </div>
+
+              <div class="col-span-full">
+                <label for="statusCRM" class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Status
+                  CRM</label>
+                <select name="statusCRM" id="statusCRM"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o Status</option>
+                  <option value="">Oportunidade Ganha</option>
+                  <option value="">Oportunidade Perdida</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="cadastroCRM" class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Cadastro
+                  no CRM</label>
+                <select name="cadastroCRM" id="cadastroCRM"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o Cadastro</option>
+                  <option value="">Sim</option>
+                  <option value="">Não</option>
+                  <option value="">N/A</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="statusAtendimentoCRM"
+                  class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Status
+                  do atendimento</label>
+                <select name="statusAtendimentoCRM" id="statusAtendimentoCRM"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o Status</option>
+                  <option value="">Oportunidade Perdida</option>
+                  <option value="">Oportunidade Ganha</option>
+                  <option value="">Oportunidade Aberta</option>
+                  <option value="">Oportunidade Não Elegível</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="dataContato" class="block mb-3 text-sm font-medium text-gray-600">
+                  Data de contato
+                </label>
+                <input type="date" name="dataContato" id="dataContato"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm">
+              </div>
+
+              <div class="col-span-full">
+                <label for="observacaoAtendimento" class="block mb-3 text-sm font-medium text-gray-600">
+                  Observações do atendimento
+                </label>
+                <textarea name="observacaoAtendimento" id="observacaoAtendimento"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira as observações"></textarea>
+              </div>
+
+              <div class="col-span-full">
+                <label for="contato" class="block mb-3 text-sm font-medium text-gray-600">
+                  Contato
+                </label>
+                <input type="text" name="contato" id="contato"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o nome do contato">
+              </div>
+
+              <div class="col-span-full">
+                <label for="cargo" class="block mb-3 text-sm font-medium text-gray-600">
+                  Cargo
+                </label>
+                <input type="text" name="cargo" id="cargo"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o cargo">
+              </div>
+
+              <div class="col-span-full">
+                <label for="cnpj" class="block mb-3 text-sm font-medium text-gray-600">
+                  CNPJ
+                </label>
+                <input type="text" name="cnpj" id="cnpj"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="xx.xxx.xxx./xxxx-xx">
+              </div>
+
+              <div class="col-span-full">
+                <label for="nomeFantasia" class="block mb-3 text-sm font-medium text-gray-600">
+                  Nome fantasia
+                </label>
+                <input type="text" name="nomeFantasia" id="nomeFantasia"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o Nome Fantasia">
+              </div>
+
+              <div class="col-span-full">
+                <label for="razaoSocial" class="block mb-3 text-sm font-medium text-gray-600">
+                  Razão social
+                </label>
+                <input type="text" name="razaoSocial" id="razaoSocial"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira a Razão Social">
+              </div>
+
+              <div class="col-span-full">
+                <label for="municipio" class="block mb-3 text-sm font-medium text-gray-600">
+                  Município
+                </label>
+                <input type="text" name="municipio" id="municipio"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Município">
+              </div>
+
+              <div class="col-span-full">
+                <label for="porte" class="block mb-3 text-sm font-medium text-gray-600 dark:text-white">Porte</label>
+                <select name="porte" id="porte"
+                  class="block w-full bg-white border border-gray-200 text-gray-900 rounded-xl focus:ring-blue-500 focus:border-blue-500 p-6 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 sm:text-sm">
+                  <option selected>Escolha o Porte</option>
+                  <option value="">EPP</option>
+                  <option value="">ME</option>
+                  <option value="">DEMAIS</option>
+                </select>
+              </div>
+
+              <div class="col-span-full">
+                <label for="endereco" class="block mb-3 text-sm font-medium text-gray-600">
+                  Endereço
+                </label>
+                <input type="text" name="endereco" id="endereco"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o Endereço">
+              </div>
+
+              <div class="col-span-full">
+                <label for="cnaePrincipal" class="block mb-3 text-sm font-medium text-gray-600">
+                  CNAE principal
+                </label>
+                <input type="text" name="cnaePrincipal" id="cnaePrincipal"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o CNAE Principal">
+              </div>
+
+              <div class="col-span-full">
+                <label for="cnaeSecundaria" class="block mb-3 text-sm font-medium text-gray-600">
+                  CNAE secundária
+                </label>
+                <input type="text" name="cnaeSecundaria" id="cnaeSecundaria"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o CNAE Secundário">
+              </div>
+
+              <div class="col-span-full">
+                <label for="tipoIndustria" class="block mb-3 text-sm font-medium text-gray-600">
+                  Tipo de indústria
+                </label>
+                <input type="text" name="tipoIndustria" id="tipoIndustria"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o Tipo de indústria">
+              </div>
+
+              <div class="col-span-full">
+                <label for="telefone" class="block mb-3 text-sm font-medium text-gray-600">
+                  Telefone
+                </label>
+                <input type="text" name="telefone" id="telefone"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="(11) 9.1234-5678">
+              </div>
+
+              <div class="col-span-full">
+                <label for="email" class="block mb-3 text-sm font-medium text-gray-600">
+                  Email
+                </label>
+                <input type="email" name="email" id="email"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="nome@sp.senai.br">
+              </div>
+
+              <div class="col-span-full">
+                <label for="qsa" class="block mb-3 text-sm font-medium text-gray-600">
+                  QSA
+                </label>
+                <input type="text" name="qsa" id="qsa"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o QSA">
+              </div>
+
+              <div class="col-span-full">
+                <label for="especialistaResponsavel" class="block mb-3 text-sm font-medium text-gray-600">
+                  Especialista responsável
+                </label>
+                <input type="text" name="especialistaResponsavel" id="especialistaResponsavel"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o nome do especialista responsável">
+              </div>
+
+              <div class="col-span-full">
+                <label for="dataAgendamento" class="block mb-3 text-sm font-medium text-gray-600">
+                  Data de agendamento
+                </label>
+                <input type="date" name="dataAgendamento" id="dataAgendamento"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm">
+              </div>
+
+              <div class="col-span-full">
+                <label for="dataAtendimento" class="block mb-3 text-sm font-medium text-gray-600">
+                  Data de atendimento
+                </label>
+                <input type="date" name="dataAtendimento" id="dataAtendimento"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm">
+              </div>
+
+              <div class="col-span-full">
+                <label for="especialista" class="block mb-3 text-sm font-medium text-gray-600">
+                  Especialista
+                </label>
+                <input type="text" name="especialista" id="especialista"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira o especialista">
+              </div>
+
+              <div class="col-span-full">
+                <label for="situacao" class="block mb-3 text-sm font-medium text-gray-600">
+                  Situação
+                </label>
+                <input type="text" name="situacao" id="situacao"
+                  class="block w-full px-6 py-3 text-black bg-white border border-gray-200 appearance-none rounded-xl placeholder:text-gray-400 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
+                  placeholder="Insira a situação">
+              </div>
+
+              <div class="col-span-full">
+                <button type="submit"
+                  class="items-center justify-center w-full px-6 py-2.5 text-center text-white duration-200 bg-blue-700 border-2 border-blue-700 rounded-full nline-flex hover:bg-transparent hover:border-blue-700 hover:text-blue-700 focus:outline-none focus-visible:outline-blue-700 text-sm focus-visible:ring-blue-700 uppercase">
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
